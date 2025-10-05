@@ -1,0 +1,38 @@
+.input-component {
+    display: flex;
+    justify-content: space-between;
+
+    &__label {
+        font-size: 21px;
+        align-self: center;
+
+        &--required::after {
+            content: '*';
+            color: red;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 18px;
+        }
+    }
+
+    &__input {
+        padding: 5px;
+        width: 335px;
+
+        &--error {
+            border: 1px solid red;
+        }
+
+        @media (max-width: 767px) {
+            width: 150px;
+        }
+    }
+
+    &__error {
+        position: absolute;
+        color: red;
+        font-size: 12px;
+        padding: 5px 0;
+    }
+}

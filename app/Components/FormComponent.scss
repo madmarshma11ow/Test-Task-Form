@@ -1,0 +1,63 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 570px;
+    margin: 3rem auto 0 auto;
+
+    &-greeting {
+        font-size: 30px;
+        color: gray;
+
+        &__name {
+            color: black;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 23px;
+        }
+    }
+
+    &-separator {
+        border: none;
+        height: 1px;
+        background-color: #E5E4E4;
+    }
+
+    &-checkbox {
+        display: flex;
+        justify-content: space-between;
+
+        &__label {
+            font-size: 21px;
+            align-self: center;
+
+            @media (max-width: 767px) {
+                font-size: 18px;
+            }
+        }
+
+        &__container {
+            width: 335px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__checkbox {
+                @media (max-width: 767px) {
+                    margin-right: 10px;
+                }
+            }
+
+            @media (max-width: 767px) {
+                width: 150px;
+                hyphens: auto;
+            }
+        }
+
+    }
+
+    @media (max-width: 767px) {
+        width: 350px;
+    }
+}

@@ -1,0 +1,33 @@
+.submit {
+    &-button {
+        width: 335px;
+        display: flex;
+        justify-content: space-between;
+        align-self: end;
+
+        &__button {
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #71C838;
+            padding: 0.75rem 1.7rem;
+        }
+
+        &__button:active {
+            background-color: #64b131;
+        }
+
+        @media (max-width: 767px) {
+            align-self: flex-start;
+        }
+
+    }
+
+    &-date {
+        display: flex;
+        align-items: center;
+        color: #999999;
+        font-size: 12px;
+    }
+}
